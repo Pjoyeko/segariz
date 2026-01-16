@@ -36,7 +36,8 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#portfolio-independent" class="nav-link">Independent Work</a></li>
+                <li><a href="#portfolio-academic" class="nav-link">Academic Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
@@ -61,7 +62,7 @@
                 </h1>
                 <p class="hero-description">Creating timeless architectural masterpieces that inspire and endure</p>
                 <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary">View Projects</a>
+                    <a href="#portfolio-independent" class="btn btn-primary">View Projects</a>
                     <a href="#contact" class="btn btn-secondary">Start a Project</a>
                 </div>
             </div>
@@ -80,7 +81,11 @@
                     <div class="about-image-frame">
                         <div class="frame-border"></div>
                         <div class="about-image">
-                            <img src="Foto Profile.jpeg" alt="Rizki Maulana - Principal Architect" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 500%22%3E%3Crect width=%22400%22 height=%22500%22 fill=%22%231a1a1a%22/%3E%3Ccircle cx=%22200%22 cy=%22180%22 r=%2270%22 fill=%22%23333%22/%3E%3Cpath d=%22M 100 350 Q 200 300 300 350 L 300 500 L 100 500 Z%22 fill=%22%23333%22/%3E%3Ctext x=%22200%22 y=%22440%22 text-anchor=%22middle%22 fill=%22%23d4af37%22 font-size=%2216%22 font-weight=%22600%22%3ERIZKI MAULANA%3C/text%3E%3Ctext x=%22200%22 y=%22465%22 text-anchor=%22middle%22 fill=%22%23888%22 font-size=%2212%22%3EPrincipal Architect%3C/text%3E%3C/svg%3E';">
+                            <img src="Foto Profile.jpeg" alt="Rizki Maulana - Principal Architect" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="image-fallback" style="display: none;">
+                                <div class="fallback-icon">👤</div>
+                                <div class="fallback-text">Rizki Maulana</div>
+                            </div>
                         </div>
                         <div class="image-accent"></div>
                     </div>
@@ -260,99 +265,55 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio-section">
+    <!-- Portfolio Independent Section -->
+    <section id="portfolio-independent" class="portfolio-section portfolio-independent-section">
         <div class="container">
             <div class="portfolio-header" data-animate>
-                <div class="section-label">Featured Work</div>
+                <div class="section-label">Independent Work</div>
                 <h2 class="section-title">Selected Projects</h2>
                 <div class="title-underline"></div>
-                <p class="section-description">A curated collection of our most distinguished architectural achievements</p>
+                <p class="section-description">Self-initiated architectural projects demonstrating creative vision and technical excellence.</p>
             </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-animate>
-                    <div class="portfolio-image">
-                        <div class="portfolio-overlay"></div>
-                        <div class="portfolio-placeholder">
-                            <div class="placeholder-content">
-                                <div class="placeholder-icon">🏛️</div>
-                                <div class="placeholder-text">Luxury Villa</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <div class="portfolio-category">Residential</div>
-                        <h3 class="portfolio-title">Modern Luxury Villa</h3>
-                        <p class="portfolio-description">Contemporary masterpiece featuring open-concept living, floor-to-ceiling windows, and seamless indoor-outdoor integration.</p>
-                        <div class="portfolio-meta">
-                            <span>Jakarta, Indonesia</span>
-                            <span>2024</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-animate>
-                    <div class="portfolio-image">
-                        <div class="portfolio-overlay"></div>
-                        <div class="portfolio-placeholder">
-                            <div class="placeholder-content">
-                                <div class="placeholder-icon">🏢</div>
-                                <div class="placeholder-text">Corporate Office</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <div class="portfolio-category">Commercial</div>
-                        <h3 class="portfolio-title">Tech Headquarters</h3>
-                        <p class="portfolio-description">Innovative workspace designed to foster creativity and collaboration with sustainable features and modern amenities.</p>
-                        <div class="portfolio-meta">
-                            <span>Bandung, Indonesia</span>
-                            <span>2023</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-animate>
-                    <div class="portfolio-image">
-                        <div class="portfolio-overlay"></div>
-                        <div class="portfolio-placeholder">
-                            <div class="placeholder-content">
-                                <div class="placeholder-icon">🏠</div>
-                                <div class="placeholder-text">Urban Residence</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <div class="portfolio-category">Residential</div>
-                        <h3 class="portfolio-title">Urban Penthouse</h3>
-                        <p class="portfolio-description">Sophisticated urban dwelling with panoramic city views, luxury finishes, and smart home technology integration.</p>
-                        <div class="portfolio-meta">
-                            <span>Surabaya, Indonesia</span>
-                            <span>2024</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-animate>
-                    <div class="portfolio-image">
-                        <div class="portfolio-overlay"></div>
-                        <div class="portfolio-placeholder">
-                            <div class="placeholder-content">
-                                <div class="placeholder-icon">🌿</div>
-                                <div class="placeholder-text">Resort Complex</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <div class="portfolio-category">Hospitality</div>
-                        <h3 class="portfolio-title">Tropical Garden Resort</h3>
-                        <p class="portfolio-description">Luxurious retreat blending traditional Balinese architecture with modern comfort in a lush tropical setting.</p>
-                        <div class="portfolio-meta">
-                            <span>Bali, Indonesia</span>
-                            <span>2023</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="portfolio-grid" id="portfolioIndependentGrid">
+                <!-- Portfolio items will be dynamically generated by JavaScript -->
             </div>
         </div>
     </section>
+
+    <!-- Divider between portfolios -->
+    <div class="portfolio-divider"></div>
+
+    <!-- Portfolio Academic Section -->
+    <section id="portfolio-academic" class="portfolio-section portfolio-academic-section">
+        <div class="container">
+            <div class="portfolio-header" data-animate>
+                <div class="section-label">Featured Work</div>
+                <h2 class="section-title">Selected Academic Projects</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Innovative and high-quality academic achievements in architecture.</p>
+            </div>
+            <div class="portfolio-grid" id="portfolioAcademicGrid">
+                <!-- Portfolio items will be dynamically generated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+        <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+        <button class="lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxCategory"></p>
+            </div>
+        </div>
+        <div class="lightbox-counter">
+            <span id="lightboxCounter"></span>
+        </div>
+    </div>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
@@ -483,7 +444,7 @@
                             <li><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#services">Services</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#portfolio-independent">Portfolio</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
