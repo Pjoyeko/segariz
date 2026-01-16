@@ -690,3 +690,50 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn('⚠️ EmailJS is not configured. Please add your credentials in script.js');
     }
 });
+
+// ============================================
+// WHATSAPP BUTTON CONFIGURATION
+// ============================================
+
+/**
+ * WhatsApp Configuration
+ */
+const WHATSAPP_CONFIG = {
+
+    phoneNumber: '6281382377420',
+    
+    // Pesan default ketika user klik tombol WhatsApp
+    defaultMessage: "Hello SEGARIZ ARCH, I'm interested in your architectural services and would like to discuss a project."
+};
+
+/**
+ * Inisialisasi tombol WhatsApp dengan link dinamis
+ */
+function initWhatsAppButton() {
+    const whatsappButton = document.querySelector('.btn-whatsapp');
+    
+    if (!whatsappButton) {
+        console.warn('WhatsApp button not found');
+        return;
+    }
+    
+    // Buat URL WhatsApp
+    const message = encodeURIComponent(WHATSAPP_CONFIG.defaultMessage);
+    const whatsappURL = `https://wa.me/${WHATSAPP_CONFIG.phoneNumber}?text=${message}`;
+    
+    // Update link tombol
+    whatsappButton.href = whatsappURL;
+    
+    // Tracking klik (opsional untuk analytics)
+    whatsappButton.addEventListener('click', function(e) {
+        console.log('WhatsApp button clicked');
+    });
+}
+
+// ============================================
+// INISIALISASI SAAT HALAMAN SIAP
+// ============================================
+document.addEventListener('DOMContentLoaded', function() {
+    initWhatsAppButton();
+    console.log('✓ WhatsApp button initialized');
+});
